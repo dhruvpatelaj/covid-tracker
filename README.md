@@ -1,5 +1,5 @@
-#COVID-19 Tracker
-###Utilizing react to create data visualization for COVID-19
+# COVID-19 Tracker
+### Utilizing react to create data visualization for COVID-19
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
