@@ -42,7 +42,7 @@ const Chart = () => {
         />
     );
 
-    return <div> {lineChart} </div>;
+    return <div className={styles.container}> {lineChart} </div>;
 };
 
 export default Chart;
