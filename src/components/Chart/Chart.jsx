@@ -6,7 +6,7 @@ import { fetchDailyData } from "../../api";
 import styles from "./Chart.module.css";
 
 const Chart = () => {
-    const [dailyData, setDailyData] = useState({});
+    const [dailyData, setDailyData] = useState([]);
 
     //! async use effect does not exist. effect callbacks are SYNCHRONOUS
     useEffect(() => {
@@ -19,7 +19,7 @@ const Chart = () => {
         fetchMyAPI();
     }, []);
 
-    const lineChart = dailyData[0].length ? (
+    const lineChart = (
         <Line
             data={{
                 labels: dailyData.map(({ date }) => date),
@@ -40,7 +40,7 @@ const Chart = () => {
                 ],
             }}
         />
-    ) : null;
+    );
 
     return <div> {lineChart} </div>;
 };
